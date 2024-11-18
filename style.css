@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(42, 42, 42) ;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 2rem;
+    background-color: #1c1c1c;
+    border-radius: 16px;
+    
+    box-shadow: 0 0 10px rgba(124, 124, 124, 0.5);
+    min-height: 45vh;
+    min-width: 30vw;
+}
+
+/* .container :hover{
+    box-shadow: 0 0 10px rgba(124, 124, 124, 0.5);
+} */
+
+form {
+    margin: 2rem 0 1rem 0;
+}
+
+form select, input, button {
+    width: 100%;
+    border: none;
+    background-color: #1c1c1c;
+    color: #fff;
+    border-radius: 0.75rem;
+}
+
+form input {
+    padding-left: 1rem;
+    height: 2rem;
+    /* font-size: 1rem; */
+    margin: 0.5rem 0;
+    border: 1px solid #8a8a8a;
+
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dropdown i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .dropdown {
+        flex-direction: column;
+    }
+}
+
+.select-container img {
+    max-width: 2rem;
+}
+.select-container{
+    display: flex;
+    width: 6rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #5d5d5d;
+    border-radius: 0.25rem;
+}
+.select-container select {
+    width: auto;
+}    
+
+.msg{
+    margin: 2rem 0 2rem 0;
+}
+
+form button {
+    background-color: #007bff;
+    height: 2.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.02); /* Slightly larger */
+}
+
+.btn:active {
+  transform: scale(0.99); /* Smaller when clicked */
+}
